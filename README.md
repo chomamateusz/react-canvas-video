@@ -4,8 +4,6 @@
 [![npm package][npm-badge]][npm]
 <!-- [![Coveralls][coveralls-badge]][coveralls] -->
 
-# react-canvas-video
-
 `react-canvas-video` is a React component with no other dependencies than prop-types, that protect your videos from being downloaded. To achive this I used a canvas that displaying 25 frames per second from hidden `<video>` tag.
 
 It is very simple protection, but our link to video is quite hard to find if one doesent know nothing about programming.
