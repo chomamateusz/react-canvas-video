@@ -4,7 +4,7 @@
 [![npm package][npm-badge]][npm]
 <!-- [![Coveralls][coveralls-badge]][coveralls] -->
 
-`react-canvas-video` is a React component with no other dependencies than prop-types, that protect your videos from being downloaded. To achive this I used a canvas that displaying 25 frames per second from hidden `<video>` tag.
+`react-canvas-video` is a React component with no other dependencies than prop-types, that protects your videos from being downloaded. To achive this I used a canvas that displaying 25 frames per second from hidden `<video>` tag.
 
 It is very simple protection, but our link to video is quite hard to find if one doesent know nothing about programming.
 
@@ -12,13 +12,17 @@ This is VERY FIRST version! I appreciate any contribution and issues.
 
 # Instalation
 
-`npm install react-canvas-video`
+```
+npm install react-canvas-video
+```
 
 # Usage
 
 Import component from package:
 
-`import CanvasVideo from 'react-canvas-video'`
+```
+import CanvasVideo from 'react-canvas-video'
+```
 
 Use it in your JSX. You can pass several options in addition to src (this is code from [example](http://react-canvas-video.surge.sh/)):
 
