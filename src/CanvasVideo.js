@@ -106,7 +106,7 @@ CanvasVideo.propTypes = {
     styles: PropTypes.shape({
         canvas: PropTypes.object,
         canvasConatiner: PropTypes.object,
-        barConatiner: PropTypes.object,
+        barContainer: PropTypes.object,
         button: PropTypes.object,
         buttonIcon: PropTypes.object,
         progress: PropTypes.object,

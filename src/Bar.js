@@ -5,12 +5,11 @@ import TimeCounter from './TimeCounter'
 import ProgressBar from './ProgressBar'
 import MuteUnMuteBtn from './MuteUnMuteBtn'
 import VolumeBar from './VolumeBar'
-import { style } from './styles'
 
 class Bar extends Component {
     render() {
         return (
-            <div style={style.barConatiner}>
+            <div style={this.props.styles.barContainer}>
                 <PlayPauseBtn
                     video={this.props.video}
                     styles={this.props.styles}

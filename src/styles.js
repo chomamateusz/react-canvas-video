@@ -7,7 +7,7 @@ export const style = {
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat'
     },
-    barConatiner: {
+    barContainer: {
         display: 'flex',
         backgroundColor: '#d0d0d0',
         position: 'relative',
@@ -18,7 +18,7 @@ export const style = {
     button: {
         height: '40px',
         border: 'none',
-        backgroundColor: '#d0d0d0',
+        backgroundColor: 'inherit',
         cursor: 'pointer'
     },
     buttonIcon: {

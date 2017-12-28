@@ -12,7 +12,7 @@ class MuteUnMuteBtn extends Component {
         const { video, styles: style} = this.props
 
         return (
-            <button
+            <div
                 onClick={e => this.muteUnMuteHandler(e, video)}
                 style={style.button}
             >
@@ -22,7 +22,7 @@ class MuteUnMuteBtn extends Component {
                         :
                         <MuteIcon style={style.buttonIcon} />
                 }
-            </button>
+            </div>
         )
     }
 }

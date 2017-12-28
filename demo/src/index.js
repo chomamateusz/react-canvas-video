@@ -7,15 +7,15 @@ class Demo extends Component {
   render() {
     return <div>
       <CanvasVideo
-        src='https://klublublin.pl/assets/kryptowaluty.mp4'
+        src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
         options={{
-          text: 'This copy is registered for',
-          poster: 'https://static.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg',
+          text: 'This copy is registered for XXX!',
+          poster: 'https://images.pexels.com/photos/383557/pexels-photo-383557.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb',
           autoplay: true
         }}
         styles={{
-          button: {
-            backgroundColor: 'green'
+          barContainer: {
+            backgroundColor: 'pink'
           }
         }}
       />

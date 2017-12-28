@@ -19,7 +19,7 @@ class PlayPauseBtn extends Component {
         const { video, styles: style } = this.props
 
         return (
-            <button
+            <div
                 onClick={(e) => this.onPlayPauseHandler(e, video)}
                 style={style.button}
             >
@@ -29,7 +29,7 @@ class PlayPauseBtn extends Component {
                         :
                         <PauseIcon style={style.buttonIcon} />
                 }
-            </button>
+            </div>
         )
     }
 }
