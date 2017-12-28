@@ -1,6 +1,7 @@
 {
   "name": "react-canvas-video",
-  "version": "1.0.0",
+  "url" : "http://react-canvas-video.surge.sh/",
+  "version": "0.0.1",
   "description": "react-canvas-video React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -29,11 +30,14 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Amazing Design (Mateusz Choma)",
+  "homepage": "https://amazingdesign.eu",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/AmazingDesign/react-canvas-video",
   "keywords": [
-    "react-component"
+    "react-component",
+    "video",
+    "hidden",
+    "protected"
   ]
 }
