@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 
-import rolling from './rolling.gif'
-
 import Bar from './Bar'
 import { style } from './styles'
 
@@ -82,7 +80,7 @@ class CanvasVideo extends Component {
                             this.props.options && this.props.options.poster ?
                                 { backgroundImage: `url(${this.props.options.poster})` }
                                 :
-                                { backgroundSize: 'auto', backgroundImage: `url(${rolling})` }
+                                {}
                         )
                     }}
                     onClick={this.onPlayPauseHandler}

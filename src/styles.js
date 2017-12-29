@@ -1,8 +1,9 @@
 export const style = {
     canvasContainer:{
-        width: '100%',
+        width: '100%'
     },
     canvas:{
+        backgroundColor: 'gray',
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat'

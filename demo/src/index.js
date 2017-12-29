@@ -10,7 +10,7 @@ class Demo extends Component {
         src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
         options={{
           text: 'This copy is registered for XXX!',
-          poster: 'https://images.pexels.com/photos/383557/pexels-photo-383557.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb',
+          // poster: 'https://images.pexels.com/photos/383557/pexels-photo-383557.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb',
           autoplay: true
         }}
         styles={{
