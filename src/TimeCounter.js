@@ -2,8 +2,14 @@ import React, { Component } from 'react'
 
 class TimeCounter extends Component {
     componentDidMount(){
-        this.props.video.addEventListener('timeupdate', () => this.forceUpdate(), false)
+        this.props.video.addEventListener('timeupdate', this.timeUpdateListener, false)
     }
+
+    componentWillUnmount() {
+        this.props.video.removeEventListener('timeupdate', this.timeUpdateListener, false)
+    }
+
+    timeUpdateListener = () => this.forceUpdate()
 
     secondsToHms = (seconds) => {
         seconds = Number(seconds)

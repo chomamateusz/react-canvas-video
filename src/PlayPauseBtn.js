@@ -3,10 +3,18 @@ import React, { Component } from 'react'
 import { PauseIcon, PlayIcon } from './icons'
 
 class PlayPauseBtn extends Component {
-    componentDidMount(){
-        this.props.video.addEventListener('play', ()=> this.forceUpdate(), false)
-        this.props.video.addEventListener('pause', ()=> this.forceUpdate(), false)
+    componentDidMount() {
+        this.props.video.addEventListener('play', this.playPauseListener, false)
+        this.props.video.addEventListener('pause', this.playPauseListener, false)
     }
+
+    componentWillUnmount() {
+        this.props.video.removeEventListener('play', this.playPauseListener, false)
+        this.props.video.removeEventListener('pause', this.playPauseListener, false)
+    }
+
+    playPauseListener = () => this.forceUpdate()
+
     onPlayPauseHandler = (e, video) => {
         video.paused ?
             video.play()

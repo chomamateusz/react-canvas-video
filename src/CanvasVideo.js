@@ -16,13 +16,22 @@ class CanvasVideo extends Component {
         })
     }
 
+    componentWillUnmount(){
+        this.virtualVideoElement.removeEventListener('play', this.playListener, false)
+        if(!this.virtualVideoElement.paused)
+            this.virtualVideoElement.pause()
+        this.virtualVideoElement.remove()
+        delete this.virtualVideoElement
+    }
+
     startPlayingInCanvas = (video, canvasRef, { ratio, autoplay }) => {
         const context = canvasRef.getContext('2d')
         canvasRef.width = canvasRef.clientWidth
         canvasRef.height = canvasRef.clientWidth / ratio
-        video.addEventListener('play', () => {
+        this.playListener = () => {
             this.draw(video, context, canvasRef.width, canvasRef.height);
-        }, false);
+        }
+        video.addEventListener('play', this.playListener, false)
         if (autoplay) video.play()
     }
 
