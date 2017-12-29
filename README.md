@@ -26,7 +26,7 @@ import CanvasVideo from 'react-canvas-video'
 
 Use it in your JSX. You can pass several options in addition to src (this is code from [example](http://react-canvas-video.surge.sh/)):
 
-```javascript
+```jsx
 <CanvasVideo
     src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
     options={{
